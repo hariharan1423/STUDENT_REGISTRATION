@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student-Registration-Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        REGISTRATION FORM
+    </header>
+   <div class="form-container"> 
+    <form method="post" action="/submit">
+        <label for="firstname">FIRSTNAME:- </label>
+        <input name="firstname" type="text" placeholder="Enter your first-name..." required>
+        <label for="lastname">LASTNAME:- </label>
+        <input name="lastname" type="text" placeholder="Enter your last-name..." required>
+        <label for="DOB">DATE OF BIRTH:- </label>
+        <input name="DOB" type="date" required>
+        <label for="regnum">REGISTRATION NUMBER:- </label>
+        <input name="regnum" placeholder="Enter your registration number...">
+        <label for="email">EMAIL ID:- </label>
+        <input name="email" type="email" placeholder="Enter your email..." required>
+        <label for="contact">CONTACT NUMBER:- </label>
+        <input name="contact" type="number" placeholder="Enter your contact number..." required>
+        <label for="address">Address:- </label>
+        <input name="address" placeholder="Enter your current address..." required>     
+        <a href="/submit"><button type="submit" id="submit">SUBMIT</button></a>
+       
+    </form>
+    <a href="/show"><button id="show">SHOW</button></a>
+   </div> 
+</body>
+</html>

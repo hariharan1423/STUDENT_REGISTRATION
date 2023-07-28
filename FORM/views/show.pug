@@ -1,0 +1,31 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Details 
+        link(rel="stylesheet" , href="pugstyles.css")
+    body 
+
+    h1 Details 
+
+    table 
+        thead 
+          tr
+            th FIRSTNAME 
+            th LASTNAME 
+            th DOB 
+            th REGISTER NUMBER
+            th EMAIL
+            th CONTACT NUMBER 
+            th ADDRESS
+        each item in items 
+            tr 
+                td=item.firstname
+                 td=item.lastname 
+                  td=item.dob 
+                   td=item.registernumber
+                    td=item.email 
+                     td=item.contactnumber
+                      td=item.address 
+        
